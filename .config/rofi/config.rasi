@@ -1,8 +1,11 @@
 configuration {
-  display-drun: "Applications:";
-  display-window: "Windows:";
+  modi: "window,run,drun,combi";
+  combi-modi: "window,drun,run";
+  kb-cancel: "Escape,Super_L";
+  display-drun: "Launch:";
+  display-window: "";
+  display-combi: "Search:";
   drun-display-format: "{icon} {name}";
-  modi: "window,run,drun";
   font: "Fira Sans Medium 12";
   show-icons: true;
   icon-theme: "Papirus";  
@@ -79,3 +82,4 @@ prompt {
 }
 
 /* vim: ft=sass
+
