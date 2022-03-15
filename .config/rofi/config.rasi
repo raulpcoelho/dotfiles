@@ -1,8 +1,8 @@
 configuration {
   modi: "window,run,drun,combi";
-  combi-modi: "window,drun,run";
+  combi-modi: "drun,run,window";
   kb-cancel: "Escape,Super_L";
-  display-drun: "Launch:";
+  display-drun: "";
   display-window: "";
   display-combi: "Search:";
   drun-display-format: "{icon} {name}";
@@ -82,4 +82,3 @@ prompt {
 }
 
 /* vim: ft=sass
-
