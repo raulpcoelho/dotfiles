@@ -4,7 +4,7 @@ configuration {
   kb-cancel: "Escape,Super_L";
   display-drun: "";
   display-window: "";
-  display-combi: "Search:";
+  display-combi: "";
   drun-display-format: "{icon} {name}";
   font: "Fira Sans Medium 12";
   show-icons: true;
@@ -18,7 +18,7 @@ configuration {
   bg-alt: #2c2c2c;
 
   fg: #FFFFFF;
-  fg-alt: #969696;
+  fg-alt: #d6d6d6;
 
 
   background-color: @bg;
@@ -30,16 +30,19 @@ configuration {
 }
 
 window {
-  width: 50%;
+  width: 30%;
+  border-radius: 8px;
 }
 
 element {
-  padding: 8 0;
-  text-color: @fg-alt;
+  padding: 8 8;
+  text-color: #d6d6d6;
 }
 
 element selected {
-  text-color: @fg;
+  text-color: #282727; 
+  background-color: #37bcbe;
+  border-radius: 8px;
 }
 
 element-text {
@@ -55,7 +58,7 @@ element-icon {
 entry {
   background-color: @bg-alt;
   padding: 12;
-  text-color: @fg;
+  text-color: @fg-alt;
 }
 
 inputbar {
@@ -78,7 +81,7 @@ prompt {
   background-color: @bg-alt;
   enabled: true;
   padding: 12 0 0 12;
-  text-color: @fg;
+  text-color: @fg-alt;
 }
 
 /* vim: ft=sass
