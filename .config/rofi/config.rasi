@@ -52,7 +52,12 @@ element-text {
 }
 
 element-icon {
-  size: 30;
+  size: 25;
+  border-radius: 4px; 
+}
+
+element-icon selected {
+  background-color: #37bcbe;
 }
 
 entry {
