@@ -89,4 +89,5 @@ prompt {
   text-color: @fg-alt;
 }
 
+
 /* vim: ft=sass
