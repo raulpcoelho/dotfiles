@@ -6,7 +6,7 @@ configuration {
   display-window: "";
   display-combi: "";
   drun-display-format: "{icon} {name}";
-  font: "Fira Sans Medium 12";
+  font: "Fira Sans Medium 16";
   show-icons: true;
   icon-theme: "Papirus";  
 }
@@ -30,8 +30,9 @@ configuration {
 }
 
 window {
-  width: 30%;
-  border-radius: 8px;
+  width: 40%;
+  height: 40%;
+  border-radius: 12px;
 }
 
 element {
@@ -74,7 +75,7 @@ listview {
   padding: 8 12;
   background-color: @bg;
   columns: 1;
-  lines: 8;
+  lines: 10;
 }
 
 mainbox {

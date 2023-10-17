@@ -119,8 +119,14 @@ bindkey '5~' kill-word
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#dotnet
+# java e maven
+export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
+export MAVEN_HOME=$HOME/apache-maven-3.9.1
+
+# dotnet
 export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet:$HOME/dotnet/tools
+
+#path
+export PATH=$PATH:$JAVA_HOME:$MAVEN_HOME/bin:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 

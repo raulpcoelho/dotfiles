@@ -115,3 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+alias aptup='sudo apt update && sudo apt upgrade'
+
+
