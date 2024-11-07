@@ -1,11 +1,12 @@
 configuration {
   modi: "window,run,drun,combi";
-  combi-modi: "drun,run,window";
+  combi-modi: "window,drun,run";
   kb-cancel: "Escape,Super_L";
   display-drun: "";
   display-window: "";
   display-combi: "";
   drun-display-format: "{icon} {name}";
+  window-format: "[Window] {n}";
   font: "Fira Sans Medium 16";
   show-icons: true;
   icon-theme: "Papirus";  
@@ -14,8 +15,8 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #343434;
-  bg-alt: #2c2c2c;
+  bg: #1C1F2C;
+  bg-alt: #1C1F2C;
 
   fg: #FFFFFF;
   fg-alt: #d6d6d6;
@@ -42,7 +43,7 @@ element {
 
 element selected {
   text-color: #282727; 
-  background-color: #37bcbe;
+  background-color: #8C97C9;
   border-radius: 8px;
 }
 
@@ -58,7 +59,7 @@ element-icon {
 }
 
 element-icon selected {
-  background-color: #37bcbe;
+  background-color: #8C97C9;
 }
 
 entry {
