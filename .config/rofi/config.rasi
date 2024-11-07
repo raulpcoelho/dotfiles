@@ -5,8 +5,8 @@ configuration {
   display-drun: "";
   display-window: "";
   display-combi: "";
-  drun-display-format: "{icon} {name}";
-  window-format: "[Window] {n}";
+  drun-display-format: "{icon}  {name}";
+  window-format: "  [Window] {n}";
   font: "Fira Sans Medium 16";
   show-icons: true;
   icon-theme: "Papirus";  
