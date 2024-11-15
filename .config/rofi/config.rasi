@@ -7,7 +7,6 @@ configuration {
   display-combi: "";
   drun-display-format: "{icon}  {name}";
   window-format: "  [Window] {n}";
-  font: "Fira Sans Medium 16";
   show-icons: true;
   icon-theme: "Papirus";  
 }
@@ -43,7 +42,7 @@ element {
 
 element selected {
   text-color: #282727; 
-  background-color: #8C97C9;
+  background-color: #7764D8;
   border-radius: 8px;
 }
 
@@ -59,7 +58,7 @@ element-icon {
 }
 
 element-icon selected {
-  background-color: #8C97C9;
+  background-color: #7764D8;
 }
 
 entry {
