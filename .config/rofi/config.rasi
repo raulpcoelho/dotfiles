@@ -9,6 +9,7 @@ configuration {
   window-format: "  [Window] {n}";
   show-icons: true;
   icon-theme: "Papirus";  
+  font: "Mono 14";
 }
 
 @theme "/dev/null"
@@ -20,7 +21,6 @@ configuration {
   fg: #FFFFFF;
   fg-alt: #d6d6d6;
 
-
   background-color: @bg;
   
   border: 0;
@@ -30,13 +30,13 @@ configuration {
 }
 
 window {
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
   border-radius: 12px;
 }
 
 element {
-  padding: 8 8;
+  padding: 16 16;
   text-color: #d6d6d6;
 }
 
@@ -63,7 +63,7 @@ element-icon selected {
 
 entry {
   background-color: @bg-alt;
-  padding: 12;
+  padding: 20;
   text-color: @fg-alt;
 }
 
@@ -74,7 +74,7 @@ inputbar {
 listview {
   padding: 8 12;
   background-color: @bg;
-  columns: 1;
+  columns: 2;
   lines: 10;
 }
 
