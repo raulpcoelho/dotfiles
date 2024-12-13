@@ -109,8 +109,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls="ls -lh --color=auto"
 alias vim="nvim"
-alias aptup="sudo apt update && sudo apt upgrade"
+alias aptup="sudo nala upgrade"
 alias mkdir="mkdir -pv"
+
 
 # ctrl backward and ctrl delete
 bindkey '^H' backward-kill-word
@@ -126,7 +127,32 @@ export MAVEN_HOME=$HOME/apache-maven-3.9.1
 # dotnet
 export DOTNET_ROOT=$HOME/dotnet
 
-#path
+# android
+export ANDROID_HOME=$HOME/Android/Sdk
+
+# path
 export PATH=$PATH:$JAVA_HOME:$MAVEN_HOME/bin:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
+export PATH=/usr/local/node/bin:$PATH
+
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# run flatpak easily
+function flatrun(){
+    flatpak run "$(flatpak list --columns application | grep -F -i "$1")" "${@:2}"
+}
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fly.io
+export FLYCTL_INSTALL="/home/rpc/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
