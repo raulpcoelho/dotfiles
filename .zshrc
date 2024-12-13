@@ -156,3 +156,5 @@ function flatrun(){
 export FLYCTL_INSTALL="/home/rpc/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
+# zoxide
+eval "$(zoxide init --cmd cd zsh)"
