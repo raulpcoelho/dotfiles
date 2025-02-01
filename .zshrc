@@ -158,3 +158,6 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+# search files
+alias search='nvim $(fzf --preview="nvim {}")'
